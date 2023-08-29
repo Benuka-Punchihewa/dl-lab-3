@@ -1,0 +1,27 @@
+1. 
+1D convolution is a mathematical operation used to process data sequences or signals by applying a smaller filter or kernel to them.
+In the context of edge detection in images, for example, the filter might be designed to respond strongly to changes in pixel intensity, which correspond to edges between objects in the image. 
+By convolving the image with this edge-detection filter, you obtain an output where high values indicate the presence of edges.
+1D convolution is a fundamental technique that allows us to analyze and extract meaningful information from signals and data sequences. 
+While the example used a simple filter, more sophisticated filters are used in real-world applications to capture various patterns and features in the data.
+
+2.
+An increase in validation error as the number of epochs increases is a phenomenon known as "overfitting."
+Overfitting occurs when a machine learning model, such as a Convolutional Neural Network (CNN), learns to perform extremely well on the training data but struggles to generalize its performance to new, unseen data (validation or test data). 
+This can lead to a decrease in validation performance as the model becomes overly specialized to the training data's noise and outliers.
+
+Early Stopping:
+Monitor the validation error during training. If the validation error starts increasing after a certain number of epochs, you can stop the training process early to prevent the model from fitting noise in the data. 
+This approach ensures that you use the model when it performs the best on unseen data.
+
+Data Augmentation:
+Data augmentation involves applying random transformations (e.g., rotation, scaling, flipping) to the training data before each epoch. 
+This expands the effective size of the training dataset and helps the model learn more robust and generalizable features.
+
+Regularization Techniques:
+Techniques like L2 regularization (weight decay) can add a penalty term to the loss function based on the magnitude of the model's weights. 
+This encourages the model to have smaller weights, reducing overfitting.
+
+Model Architecture:
+Experiment with different CNN architectures, including layer configurations, kernel sizes, and pooling strategies.
+A well-designed architecture can improve generalization.
